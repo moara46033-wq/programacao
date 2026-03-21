@@ -1,0 +1,58 @@
+<?php
+class Animal {
+    public $tamanho;
+    public $cor;
+    public $numeroPatas;
+    public $pelagem;
+    public $porte;
+
+    public function andar() {
+        echo "andando";
+
+    }
+
+  public function falar() {
+    echo "falando";
+  }
+
+  public function comer() {
+    echo "comendo";
+  }
+}
+
+
+$gatopreto= new Animal();
+
+$gatopreto-> cor = "preto";
+$gatopreto-> numeroPatas = "4";
+$gatopreto-> pelagem = "baixa";
+$gatopreto-> tamanho = "60";
+$gatopreto-> porte = "pequeno";
+
+echo "o gato preto tem a cor " . $gatopreto->cor . "<br>";
+echo "o gato preto tem  " . $gatopreto->numeroPatas . "<br>";
+echo "o gato preto tem a pelagem " . $gatopreto->pelagem . "<br>";
+echo "o gato preto tem tamanho " . $gatopreto->tamanho . " cm <br>";
+echo "o gato preto tem porte " . $gatopreto->porte . "<br>";
+
+$gatopreto-> falar(); 
+
+$cachorro= new Animal();
+$cachorro-> cor = "branco";
+$cachorro-> numeroPatas = "4";
+$cachorro-> pelagem = "alta";
+$cachorro-> tamanho = "90";
+
+echo "o cachorro tem a cor " . $cachorro->cor . "<br>";
+echo "o cachorro preto tem  " . $cachorro->numeroPatas . "<br>";
+echo "o cachorro tem a pelagem " . $cachorro->pelagem . "<br>";
+echo "o cachorro tem tamanho " . $cachorro->tamanho . " cm <br>";
+echo "o cachorro tem porte " . $cachorro->porte . "<br>";
+
+$cachorro-> comer();
+
+
+
+
+
+?>
